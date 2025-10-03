@@ -224,23 +224,25 @@ aside {
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    margin-top: 20px;
+    margin-top: 50px;
     background-color: white;
+    margin-bottom: 20px;
 }
 
 .origin {
     margin-right: 50px;
-    text-align: right;
+    margin-left: 100px;
     font-family: "Titillium Web", sans-serif;
     font-style: initial;
     font-weight: 150;
     font-size: 1.5rem;
     margin-top: 50px;
     color: #000000;
-    text-justify: newspaper;
+    text-align: justify;
+    margin-bottom: 50px;
 }
 
-.
+
 footer {
     background-color: #000000;
     color: #ffffff;
