@@ -1,0 +1,22 @@
+
+.catalogo {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.producto {
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+.producto img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}

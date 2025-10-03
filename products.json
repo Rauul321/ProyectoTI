@@ -6,8 +6,6 @@
         "price": 1299,
         "description": "Laptop ultraligera con procesador de última generación, perfecta para profesionales.",
         "specs": ["16GB RAM", "512GB SSD", "Intel i7"],
-        "rating": 5,
-        "badge": "OFERTA",
         "icon": "💻"
     },
     {
@@ -17,8 +15,6 @@
         "price": 899,
         "description": "Smartphone premium con cámara de 108MP y batería de larga duración.",
         "specs": ["128GB", "5G", "AMOLED"],
-        "rating": 4,
-        "badge": null,
         "icon": "📱"
     },
     {
@@ -28,8 +24,6 @@
         "price": 599,
         "description": "Tablet profesional ideal para diseño y creatividad digital.",
         "specs": ["11\" Retina", "256GB", "Stylus"],
-        "rating": 5,
-        "badge": null,
         "icon": "📲"
     },
     {
@@ -39,8 +33,6 @@
         "price": 249,
         "description": "Cancelación de ruido activa y sonido Hi-Fi para una experiencia inmersiva.",
         "specs": ["ANC", "40h batería", "Bluetooth 5.3"],
-        "rating": 4,
-        "badge": "NUEVO",
         "icon": "🎧"
     },
     {
@@ -50,8 +42,6 @@
         "price": 1899,
         "description": "Portátil gaming de alto rendimiento con gráficos RTX y pantalla 144Hz.",
         "specs": ["32GB RAM", "RTX 4070", "1TB SSD"],
-        "rating": 5,
-        "badge": null,
         "icon": "🎮"
     },
     {
@@ -61,8 +51,6 @@
         "price": 299,
         "description": "Reloj inteligente con monitorización avanzada de salud y deportes.",
         "specs": ["GPS", "Resistente agua", "7 días batería"],
-        "rating": 4,
-        "badge": null,
         "icon": "⌚"
     }
 ]
