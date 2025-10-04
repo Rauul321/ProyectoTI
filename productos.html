@@ -10,6 +10,42 @@
     <link href="productos.css" rel="stylesheet">
 </head>
 <body>
+    <nav class="navbar">
+        <div class="menu-toggle" id="mobile-menu">
+            ☰
+        </div>
+        <ul class="nav-list">
+            <li><a href="contacto.html">Contacto</a></li>
+            <li><a href="productos.html">Productos</a></li>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="resenas.html">Reseñas</a></li>
+        </ul>
+        <div class="cart-button">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bag" viewBox="0 0 16 16">
+                <path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1m3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1z"/>
+            </svg>
+        </div>
+    </nav>
+
+    <div class="filters-container">
+        <div class="filters">
+            <h3>Filtrar por categoría</h3>
+            <button id="mostrar-todos">Mostrar todos</button> <!-- Botón para quitar filtro de categoría -->
+            <ul id="category-list">
+                <!-- Aquí se mostrarán las categorías dinámicamente -->
+            </ul>
+        </div>
+
+        <div class="filters">
+            <h3>Rango de Precio</h3>
+            <div class="price-range">
+                <span id="min-price">$0</span>
+                <input type="range" id="price-filter" min="0" step="1">
+                <span id="max-price">1000</span>
+            </div>
+            <p id="price-label">$1000</p>
+        </div>
+    </div>
 
     <div class="catalogo" id="catalogo">
 
