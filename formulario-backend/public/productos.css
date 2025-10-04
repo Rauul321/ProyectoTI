@@ -1,16 +1,17 @@
-/* Contenedor para la barra lateral de filtros (lado izquierdo) */
+/* Contenedor para la barra lateral de filtros (debajo de la barra de menú) */
 .filters-container {
     display: flex;
     flex-direction: column; /* Aseguramos que los filtros se apilen verticalmente */
-    position: fixed; /* Fijar la barra lateral al lado izquierdo */
-    top: 0;
+    position: absolute; /* Cambié de 'relative' a 'absolute' para que no afecte al flujo de la página */
+    top: 70px; /* La barra lateral empieza debajo de la barra de navegación */
     left: 0;
     width: 250px; /* Ancho de la barra lateral */
-    height: 100vh; /* Ocupa toda la altura de la pantalla */
-    background-color: #1a1a1a; /* Fondo negro */
     padding: 20px;
+    background-color: #1a1a1a; /* Fondo negro */
     box-shadow: 2px 0 10px rgba(0, 0, 0, 0.2); /* Sombra en el lado derecho */
-    z-index: 1000; /* Aseguramos que esté por encima de otros elementos */
+    z-index: 999; /* Aseguramos que no se ponga encima de otros elementos */
+    height: calc(100vh - 70px); /* Ocupa toda la pantalla menos la altura de la barra de navegación */
+    overflow-y: auto; /* Añadido para que se pueda hacer scroll si los filtros son demasiado largos */
 }
 
 /* Estilos de los filtros dentro del panel */
@@ -90,6 +91,22 @@
     margin-top: 10px;
 }
 
+/* Estilo para el precio mínimo */
+#min-price {
+    font-weight: 600;
+    font-family: 'Exo 2', sans-serif;
+    color: #fff; /* Rojo para el precio mínimo */
+    font-size: 1.2rem;
+}
+
+/* Estilo para el precio máximo */
+#max-price {
+    font-weight: 600;
+    font-family: 'Exo 2', sans-serif;   
+    color: #fff; /* Azul para el precio máximo */
+    font-size: 1.2rem;
+}
+
 #price-label {
     margin-top: 10px;
     font-size: 1.1rem;
@@ -105,7 +122,7 @@
     gap: 20px;
     padding: 20px;
     margin-left: 270px; /* Deja espacio para la barra lateral */
-    margin-top: 20px; /* Añadir algo de espacio arriba */
+    margin-top: 70px; /* Este es el margen que permite el espacio debajo de la barra de navegación */
 }
 
 /* Producto individual */

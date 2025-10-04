@@ -55,5 +55,55 @@
         "description": "Reloj inteligente con monitorización avanzada de salud y deportes.",
         "specs": ["GPS", "Resistente agua", "7 días batería"],
         "icon": "⌚"
+    },
+    {
+        "id": 7,
+        "name": "Surface Pro 9",
+        "category": "Tablet",
+        "price": 1099,
+        "description": "Tablet 2 en 1 con Windows 11, ideal para productividad y entretenimiento.",
+        "specs": ["8GB RAM", "256GB SSD", "Intel i5"],
+        "icon": "📱",
+        "imagen": "products_images/Surface Pro 9.png"
+    },
+    {
+        "id": 8,
+        "name": "iPhone 14 Pro",
+        "category": "Smartphone",
+        "price": 1199,
+        "description": "Smartphone con cámara de 48MP, pantalla ProMotion y chip A16 Bionic.",
+        "specs": ["128GB", "5G", "Super Retina XDR"],
+        "icon": "📱",
+        "imagen": "products_images/iPhone 14 Pro.png"
+    },
+    {
+        "id": 9,
+        "name": "Sony WH-1000XM5",
+        "category": "Accesorio",
+        "price": 399,
+        "description": "Auriculares inalámbricos con cancelación de ruido líder en la industria y calidad de sonido premium.",
+        "specs": ["ANC", "30h batería", "Bluetooth 5.2"],
+        "icon": "🎧",
+        "imagen": "products_images/Sony WH-1000XM5.png"
+    },
+    {
+        "id": 10,
+        "name": "Lenovo Legion 5 Pro",
+        "category": "Laptop",
+        "price": 1799,
+        "description": "Laptop gaming con procesador Ryzen 7 y gráficos RTX 3070, perfecta para los gamers más exigentes.",
+        "specs": ["16GB RAM", "RTX 3070", "512GB SSD"],
+        "icon": "🎮",
+        "imagen": "products_images/Lenovo Legion 5 Pro.png"
+    },
+    {
+        "id": 11,
+        "name": "Apple Watch Ultra",
+        "category": "Accesorio",
+        "price": 749,
+        "description": "Reloj inteligente premium con monitorización avanzada de salud y diseño resistente.",
+        "specs": ["GPS", "Resistente agua 100m", "36 horas de batería"],
+        "icon": "⌚",
+        "imagen": "products_images/Apple Watch Ultra.png"
     }
 ]
