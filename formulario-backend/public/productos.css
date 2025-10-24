@@ -7,7 +7,7 @@
     left: 0;
     width: 250px; /* Ancho de la barra lateral */
     padding: 20px;
-    background-color: #1a1a1a; /* Fondo negro */
+    background-color: #000000; /* Fondo negro */
     box-shadow: 2px 0 10px rgba(0, 0, 0, 0.2); /* Sombra en el lado derecho */
     z-index: 999; /* Aseguramos que no se ponga encima de otros elementos */
     height: calc(100vh - 70px); /* Ocupa toda la pantalla menos la altura de la barra de navegación */
@@ -25,7 +25,7 @@
     font-size: 1.1rem;
     margin-bottom: 15px;
     width: 100%;
-    font-family: 'Exo 2', sans-serif;
+    font-family: "Titillium Web", sans-serif;
     transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
@@ -44,7 +44,7 @@
 }
 
 .filters h3 {
-    font-family: 'Exo 2', sans-serif;
+    font-family: "Titillium Web", sans-serif;
     font-size: 1.2rem;
     color: #fff; /* Texto blanco */
     margin-bottom: 10px;
@@ -57,7 +57,7 @@
 
 .filters ul li {
     padding: 8px 0;
-    font-family: 'IBM Plex Sans', sans-serif; /* Cambiar la fuente de las categorías */
+    font-family: "Titillium Web", sans-serif;
     font-size: 1rem;
     color: #ccc; /* Color gris claro */
     cursor: pointer;
@@ -75,6 +75,7 @@
     margin: 15px 0;
     border-radius: 8px;
     background-color: #555; /* Gris para el slider */
+    color: white;
     height: 8px;
     cursor: pointer;
     transition: background-color 0.3s ease;
@@ -89,48 +90,57 @@
     justify-content: space-between;
     align-items: center;
     margin-top: 10px;
+    font-family: "Titillium Web", sans-serif;
+    color: #fff; /* Texto blanco */
 }
 
 /* Estilo para el precio mínimo */
 #min-price {
-    font-weight: 600;
-    font-family: 'Exo 2', sans-serif;
+    font-weight: 100;
+    font-family: "Titillium Web", sans-serif;
     color: #fff; /* Rojo para el precio mínimo */
     font-size: 1.2rem;
 }
 
 /* Estilo para el precio máximo */
 #max-price {
-    font-weight: 600;
-    font-family: 'Exo 2', sans-serif;   
+    font-weight: 100;
+    font-family: "Titillium Web", sans-serif;
     color: #fff; /* Azul para el precio máximo */
     font-size: 1.2rem;
+
 }
 
 #price-label {
     margin-top: 10px;
     font-size: 1.1rem;
-    font-family: 'Exo 2', sans-serif;
-    font-weight: 600;
+    font-family: "Titillium Web", sans-serif;
+    font-weight: 100;
     color: #fff; /* Texto blanco */
 }
 
 /* Estilos para el contenedor de productos, ahora con margen a la izquierda */
 .catalogo {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-auto-rows: 380px; /* 🔧 Todas las tarjetas tendrán la misma altura */
     gap: 20px;
     padding: 20px;
     margin-left: 270px; /* Deja espacio para la barra lateral */
     margin-top: 70px; /* Este es el margen que permite el espacio debajo de la barra de navegación */
+    margin-bottom: 100px
 }
 
 /* Producto individual */
 .producto {
+    display: flex; /* 🔧 Para alinear correctamente el contenido dentro */
+    flex-direction: column; /* 🔧 Coloca imagen, texto y botón en vertical */
+    justify-content: space-between; /* 🔧 Espacia contenido de forma uniforme */
+    height: 100%; /* 🔧 Ocupa todo el alto de la celda del grid */
     border: none;
     padding: 20px;
     border-radius: 15px;
-    background-color: #333; /* Fondo gris oscuro para los productos */
+    background-color: #000000; /* Fondo gris oscuro para los productos */
     text-align: center;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -144,44 +154,106 @@
 
 .producto img {
     width: 100%;
-    height: auto;
+    height: 180px; /* 🔧 Fija una altura uniforme para las imágenes */
+    object-fit: cover; /* 🔧 Evita deformaciones */
     border-radius: 10px;
     margin-bottom: 15px;
 }
 
 .producto h2 {
-    font-family: 'Exo 2', sans-serif;
+    font-family: "Titillium Web", sans-serif;
     font-weight: 700;
     font-size: 1.2rem;
     color: #fff; /* Texto blanco */
 }
 
 .producto p {
-    font-family: 'IBM Plex Sans', sans-serif;
+    font-family: "Titillium Web", sans-serif;
     font-size: 0.9rem;
     color: #bbb; /* Gris claro */
 }
 
 .producto p strong {
-    font-family: 'Exo 2', sans-serif;
+    font-family: "Titillium Web", sans-serif;
     font-size: 1.2rem;
     color: #544444; /* Rojo vibrante para el precio */
 }
 
-.precio-boton {
+.addToCart-button {
     background-color: #e60000; /* Puedes mantener el fondo rojo o elegir otro color */
     color: white; /* Esto cambia el color del texto a blanco */
     border: none; /* Elimina el borde del botón */
     padding: 12px 20px;
     font-size: 1.2rem;
-    font-family: 'Exo 2', sans-serif;
+    font-family: "Titillium Web", sans-serif;
     border-radius: 8px; /* Bordes redondeados */
     cursor: pointer;
     transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
 /* Efecto al hacer hover */
-.precio-boton:hover {
+.addToCart-button:hover {
     background-color: #cc0000; /* Rojo más oscuro cuando pasas el ratón */
     transform: scale(1.05); /* Efecto de aumento al hacer hover */
+}
+
+/* ===== Barra de rango personalizada ===== */
+#price-filter {
+    -webkit-appearance: none; /* Elimina estilo por defecto */
+    appearance: none;
+    width: 100%;
+    height: 3px; /* 🔹 Línea fina */
+    background: #555; /* Gris base */
+    border-radius: 3px;
+    outline: none;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+/* ===== Hover ===== */
+#price-filter:hover {
+    background: #777; /* Un poco más claro al pasar el mouse */
+}
+
+/* ===== "Thumb" en navegadores WebKit (Chrome, Safari, Edge Chromium) ===== */
+#price-filter::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 3px; /* 🔹 Grosor de la rayita */
+    height: 20px; /* 🔹 Alto de la rayita */
+    background: #e60000; /* 🔹 Rojo para destacar */
+    border-radius: 2px;
+    transition: transform 0.2s ease, background-color 0.3s ease;
+}
+
+#price-filter::-webkit-slider-thumb:hover {
+    transform: scaleY(1.3); /* 🔹 Se alarga un poco al hacer hover */
+    background-color: #ff3333;
+}
+
+/* ===== Firefox ===== */
+#price-filter::-moz-range-thumb {
+    width: 3px;
+    height: 20px;
+    background: #e60000;
+    border: none;
+    border-radius: 2px;
+    transition: transform 0.2s ease, background-color 0.3s ease;
+}
+
+#price-filter::-moz-range-thumb:hover {
+    transform: scaleY(1.3);
+    background-color: #ff3333;
+}
+
+/* ===== Pista en Firefox ===== */
+#price-filter::-moz-range-track {
+    height: 3px;
+    background: #555;
+    border-radius: 3px;
+}
+
+
+.menu-toggle {
+    display: none;
 }

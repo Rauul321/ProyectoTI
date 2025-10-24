@@ -1,109 +1,39 @@
 [
     {
-        "id": 1,
-        "name": "MacBook Pro X1",
-        "category": "Laptop",
-        "price": 1299,
-        "description": "Laptop ultraligera con procesador de última generación, perfecta para profesionales.",
-        "specs": ["16GB RAM", "512GB SSD", "Intel i7"],
-        "icon": "💻",
-        "imagen":"products_images/MacBook Pro X1.png"
-    },
-    {
-        "id": 2,
-        "name": "Galaxy Max 15",
-        "category": "Smartphone",
-        "price": 899,
-        "description": "Smartphone premium con cámara de 108MP y batería de larga duración.",
-        "specs": ["128GB", "5G", "AMOLED"],
-        "icon": "📱",
-        "imagen":"products_images/Galaxy Max 15.png"
-    },
-    {
-        "id": 3,
-        "name": "Galaxy T",
-        "category": "Tablet",
-        "price": 599,
-        "description": "Tablet profesional ideal para diseño y creatividad digital.",
-        "specs": ["11\" Retina", "256GB", "Stylus"],
-        "icon": "📲",
-        "imagen":""
-    },
-    {
         "id": 4,
         "name": "Auriculares Wireless Premium",
         "category": "Accesorio",
-        "price": 249,
+        "price": 249.00,
         "description": "Cancelación de ruido activa y sonido Hi-Fi para una experiencia inmersiva.",
-        "specs": ["ANC", "40h batería", "Bluetooth 5.3"],
-        "icon": "🎧"
+        "imagen":"auriculares.png",
+        "stock": 15
     },
     {
-        "id": 5,
-        "name": "Gaming Beast RTX",
-        "category": "Laptop",
-        "price": 1899,
-        "description": "Portátil gaming de alto rendimiento con gráficos RTX y pantalla 144Hz.",
-        "specs": ["32GB RAM", "RTX 4070", "1TB SSD"],
-        "icon": "🎮"
-    },
-    {
-        "id": 6,
-        "name": "SmartWatch Fitness Pro",
+        "id": 12,
+        "name": "Gaming keyboard RGB",
         "category": "Accesorio",
-        "price": 299,
-        "description": "Reloj inteligente con monitorización avanzada de salud y deportes.",
-        "specs": ["GPS", "Resistente agua", "7 días batería"],
-        "icon": "⌚"
+        "price": 129.99,
+        "description": "Teclado mecánico con retroiluminación RGB personalizable y teclas programables.",
+        "imagen": "keyboard.png",
+        "stock": 10
     },
     {
-        "id": 7,
-        "name": "Surface Pro 9",
-        "category": "Tablet",
-        "price": 1099,
-        "description": "Tablet 2 en 1 con Windows 11, ideal para productividad y entretenimiento.",
-        "specs": ["8GB RAM", "256GB SSD", "Intel i5"],
-        "icon": "📱",
-        "imagen": "products_images/Surface Pro 9.png"
-    },
-    {
-        "id": 8,
-        "name": "iPhone 14 Pro",
-        "category": "Smartphone",
-        "price": 1199,
-        "description": "Smartphone con cámara de 48MP, pantalla ProMotion y chip A16 Bionic.",
-        "specs": ["128GB", "5G", "Super Retina XDR"],
-        "icon": "📱",
-        "imagen": "products_images/iPhone 14 Pro.png"
-    },
-    {
-        "id": 9,
-        "name": "Sony WH-1000XM5",
+        "id": 13,
+        "name": "Smart Watch Waterproof 2",
         "category": "Accesorio",
-        "price": 399,
-        "description": "Auriculares inalámbricos con cancelación de ruido líder en la industria y calidad de sonido premium.",
-        "specs": ["ANC", "30h batería", "Bluetooth 5.2"],
-        "icon": "🎧",
-        "imagen": "products_images/Sony WH-1000XM5.png"
+        "price": 199.99,
+        "description": "Reloj inteligente con monitorización avanzada de salud y deportes, resistente al agua.",
+        "imagen": "smartwatch.png",
+        "stock": 8
     },
     {
-        "id": 10,
-        "name": "Lenovo Legion 5 Pro",
-        "category": "Laptop",
-        "price": 1799,
-        "description": "Laptop gaming con procesador Ryzen 7 y gráficos RTX 3070, perfecta para los gamers más exigentes.",
-        "specs": ["16GB RAM", "RTX 3070", "512GB SSD"],
-        "icon": "🎮",
-        "imagen": "products_images/Lenovo Legion 5 Pro.png"
-    },
-    {
-        "id": 11,
-        "name": "Apple Watch Ultra",
+        "id": 14,
+        "name": "Mouse gaming RGB",
         "category": "Accesorio",
-        "price": 749,
-        "description": "Reloj inteligente premium con monitorización avanzada de salud y diseño resistente.",
-        "specs": ["GPS", "Resistente agua 100m", "36 horas de batería"],
-        "icon": "⌚",
-        "imagen": "products_images/Apple Watch Ultra.png"
+        "price": 14.99,
+        "description": "Ratón ergonómico con sensor de alta precisión y retroiluminación RGB personalizable.",
+        "imagen": "mouse.png",
+        "stock": 5
     }
+
 ]

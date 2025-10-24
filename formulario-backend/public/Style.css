@@ -106,7 +106,7 @@ body {
 .navbar {
     display: flex;
     justify-content: center;
-    background-color: #000000;
+    background-color: #cc0000;
     padding: 10px 0;
 }
 
@@ -129,10 +129,15 @@ body {
     font-style: revert;
 }
 
+.nav-list li a:hover {
+    color: #000000;
+}
+
 .cart-button {
     position: absolute;
     right: 20px; /* separa 20px del borde derecho */
-    font-size: 1.5rem;
+    font-size: 24px;
+
     cursor: pointer;
     color: #ffffff;
 }
@@ -207,6 +212,16 @@ aside {
     text-decoration: none;
 }
 
+.cart-btn {
+    color: white;
+}
+
+.cart-btn:hover {
+    color: #000000;
+    transition-duration: 0.5s;
+    transform: scale(1.15)
+}
+
 .button-container {
     display: flex;
     justify-content: center;
@@ -258,7 +273,7 @@ footer {
     display: block;
     width: 90%;
     padding: 20px;
-    background-color: #ffffff;
+    background-color: #000000;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
@@ -266,7 +281,7 @@ footer {
 .form-container h2 {
     text-align: center;
     margin-bottom: 20px;
-    color: #000000;
+    color: #ffffff;
     font-family: "Titillium Web", sans-serif;
     font-style: initial;
 }
@@ -274,7 +289,7 @@ footer {
 .form-container label {
     display: block;
     margin-bottom: 8px;
-    color: #000000;
+    color: #ffffff;
     font-family: "Titillium Web", sans-serif;
     font-style: initial;
 }
@@ -289,6 +304,8 @@ footer {
     border-bottom: 1px solid #ccc;
     box-sizing: border-box;
     font-family: "Titillium Web", sans-serif;
+    background-color: black;
+    color: #ffffff;
 }
 
 .form-container textarea {
@@ -299,7 +316,8 @@ footer {
     border-left: white;
     border-right: white;
     border-bottom: 1px solid #ccc;
-    color: #000000;
+    color: #ffffff;
+    background-color: black;
     font-family: "Titillium Web", sans-serif;
     font-style: initial;
 }
@@ -307,20 +325,24 @@ footer {
 .form-container button {
     width: 100%;
     padding: 10px;
-    background-color: #ffffff;
-    color: #000000;
+    background-color: #000000;
+    color: #ffffff;
     border-radius: 4px;
     cursor: pointer;
     font-family: "Titillium Web", sans-serif;
     font-style: initial;
-    border-color: black;
+    border-color: #ffffff;
 }
 
 .form-container button:hover {
     transition-duration: 0.5s;
     transform: scale(1.02);
-    background-color: #000000;
-    color: #ffffff;
+    background-color: #ffffff;
+    color: #000000;
+}
+
+.menu-toggle {
+    display: none;
 }
 
 

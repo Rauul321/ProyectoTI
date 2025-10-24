@@ -8,6 +8,7 @@ fetch('./products.json')
         const minPriceLabel = document.getElementById('min-price'); // El texto que muestra el precio mínimo
         const maxPriceLabel = document.getElementById('max-price'); // El texto que muestra el precio máximo
         const mostrarTodosBtn = document.getElementById('mostrar-todos'); // El botón para mostrar todos los productos
+        const addToCartBtn = document.getElementsByClassName('addToCart-button'); // Botones "Add to cart"
 
         let categoriaSeleccionada = null; // Variable para la categoría seleccionada
 
@@ -74,11 +75,29 @@ fetch('./products.json')
                     <img src="${producto.imagen}" alt="${producto.name}">
                     <h2>${producto.name}</h2>
                     <p>${producto.description}</p>
-                    <button class="precio-boton"><strong>$${producto.price.toFixed(2)}</strong></button>
+                    <button class="addToCart-button"><strong>Add to cart</strong></button>
+                    <p>$${producto.price.toFixed(2)}</p>
                 `;
                 catalogo.appendChild(div);
             });
         }
+
+        const addToCartButtons = document.getElementsByClassName('addToCart-button');
+
+        for (let button of addToCartButtons) {
+            button.addEventListener('click', () => {
+                const productDiv = button.parentElement;
+                const productName = productDiv.querySelector('h2').textContent;
+                const productPrice = parseFloat(productDiv.querySelector('p:last-of-type').textContent.replace('$', ''));
+                addToCart(productName, productPrice);
+            });
+        }
+
+        function addToCart(productName, productPrice) {
+            cart.push({ name: productName, price: productPrice });
+            alert(`${productName} ha sido añadido al carrito.`);
+        }
+
 
         // Función para mostrar todos los productos al hacer clic en "Mostrar todos"
         mostrarTodosBtn.addEventListener('click', () => {
